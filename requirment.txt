@@ -1,0 +1,80 @@
+
+
+
+if successfully Done the work 
+this type of response comes from the backend 
+statusCode , message , data-> data may be comming in form of array Or Object 
+
+
+// Data Required For Student Signup 
+--> email , name , phoneNumer , currentClass , reffralId 
+--> method POST
+if successfully register and incase failled same response comes  statusCode:number  and message:string 
+
+
+// Data Required For Student Login
+--> email, password 
+--> method PATCH
+
+
+// Check ReffralUsers 
+
+--> method get 
+--> data recive from the backend 
+statusCode,  message , data: [{email , name , userName , phoneNumber }]
+
+
+
+// show teachers 
+--> method get but in params i want page number and limit 
+ex--> api/v1/showTeacher/limit=10/page=1
+--> data commnig from the backend 
+statusCode  , message , data-->[
+  {
+    email,
+  name,
+  avatar,
+  userName,
+  Teachers:{
+  teacherId,
+  videoLink,
+  description,
+  qualification,
+  subjectTeaching,
+  completeAddress,
+  locality,
+  }
+  }
+]
+
+
+
+// applyForTeachersInquary
+--> method post 
+--> accepting data from the frontend ---> teacherId
+--> success or failled response statusCode , message
+
+
+
+
+
+
+/// SearchTeacher 
+----> data commnig from the backend 
+statusCode  , message , data-->[
+  {
+  email,
+  name,
+  avatar,
+  userName,
+  Teachers:{
+  teacherId,
+  videoLink,
+  description,
+  qualification,
+  subjectTeaching,
+  completeAddress,
+  locality,
+  }
+  }
+]
